@@ -1,2 +1,7 @@
 # mdPreview
 コピペしてmdファイルをプレビューするだけのアプリ
+
+## 使い方
+1. `/tmp/workspace/mocoas/mdPreview/index.html` をブラウザで開く
+2. `.md` ファイルを貼り付ける（またはMarkdownテキストを貼り付ける）
+3. 右側にプレビューが表示される
