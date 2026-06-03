@@ -141,3 +141,59 @@
 **Context**: NFR Requirements Step 7 completion message
 
 ---
+
+## CONSTRUCTION - NFR Requirements (User Approval)
+**Timestamp**: 2026-06-03T00:33:06Z
+**User Input**: "approve"
+**AI Response**: "NFR requirements approved by user. Proceeding to Code Generation Part 1 (Planning)."
+**Context**: NFR Requirements Step 9 approval received
+
+---
+
+## CONSTRUCTION - Code Generation (Planning Prompt)
+**Timestamp**: 2026-06-03T00:33:06Z
+**User Input**: "approve"
+**AI Response**: "Created code generation plan at `aidlc-docs/construction/plans/md-preview-app-code-generation-plan.md` with explicit implementation and test steps for static Markdown preview app, including Security/PBT compliance points. Requesting user approval before Part 2 generation."
+**Context**: Code Generation Part 1 complete, awaiting approval
+
+---
+
+## CONSTRUCTION - Code Generation (Plan Approval)
+**Timestamp**: 2026-06-03T00:33:06Z
+**User Input**: "2"
+**AI Response**: "User selected Continue to Next Stage. Proceeding with Code Generation Part 2 execution."
+**Context**: Code Generation Part 1 approval received
+
+---
+
+## CONSTRUCTION - Code Generation (Execution)
+**Timestamp**: 2026-06-03T00:37:28Z
+**User Input**: "2"
+**AI Response**: "Implemented static markdown preview app code, added unit tests and property-based tests, installed dependencies, and validated with npm test (12 tests passed)."
+**Context**: Code Generation Part 2 completed
+
+---
+
+## CONSTRUCTION - Code Generation (Completion Prompt)
+**Timestamp**: 2026-06-03T00:37:28Z
+**User Input**: "2"
+**AI Response**: "# 💻 Code Generation Complete - md-preview-app\n\n- Created: `index.html`, `styles.css`, `src/app.js`, `src/markdown.js`, `src/state.js`\n- Created tests: `tests/markdown.test.js`, `tests/state.test.js`, `tests/markdown.property.test.js`, `tests/state.property.test.js`\n- Created tooling: `package.json`, `vitest.config.js`\n- Updated: `README.md`\n- Created documentation: `aidlc-docs/construction/md-preview-app/code/code-summary.md`\n- Validation: `npm test` passed (4 files, 12 tests)\n\n> **📋 <u>**REVIEW REQUIRED:**</u>**  \n> Please examine the generated code at:\n> - **Application Code**: `/workspaces/mdPreview`\n> - **Documentation**: `aidlc-docs/construction/md-preview-app/code/`\n\n\n\n> **🚀 <u>**WHAT'S NEXT?**</u>**\n>\n> **You may:**\n>\n> 🔧 **Request Changes** - Ask for modifications to the generated code based on your review  \n> ✅ **Continue to Next Stage** - Approve code generation and proceed to **Build and Test**\n\n---"
+**Context**: Code Generation Step 14 completion message
+
+---
+
+## CONSTRUCTION - Code Generation (Post-Review Change Request)
+**Timestamp**: 2026-06-03T00:38:12Z
+**User Input**: "node_modulesはgitignoreしといて\n他にもgitignoreに追加すべき項目があれば提案して"
+**AI Response**: "Created `.gitignore` and added `node_modules/` plus recommended entries for coverage/build outputs, logs, OS artifacts, and local env files."
+**Context**: Post-generation maintenance update
+
+---
+
+## CONSTRUCTION - Git Commit and Push Request
+**Timestamp**: 2026-06-03T23:58:13Z
+**User Input**: "現在の内容をコミットしてＰＵＳＨして"
+**AI Response**: "Prepared repository status, committed all current changes, and pushed to origin/main."
+**Context**: User-requested VCS operation
+
+---
