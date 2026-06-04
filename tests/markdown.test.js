@@ -21,6 +21,29 @@ describe("markdown rendering", () => {
     expect(html).toContain("const a = 1;");
   });
 
+  it("renders markdown tables", () => {
+    const html = renderMarkdown("| 列A | 列B |\n| --- | --- |\n| 1 | 2 |");
+    expect(html).toContain("<table>");
+    expect(html).toContain("<th>列A</th>");
+    expect(html).toContain("<th>列B</th>");
+    expect(html).toContain("<td>1</td>");
+    expect(html).toContain("<td>2</td>");
+  });
+
+  it("renders unordered lists", () => {
+    const html = renderMarkdown("- りんご\n- みかん");
+    expect(html).toContain("<ul>");
+    expect(html).toContain("<li>りんご</li>");
+    expect(html).toContain("<li>みかん</li>");
+  });
+
+  it("separates paragraph and list blocks correctly", () => {
+    const html = renderMarkdown("導入文\n- 項目A\n- 項目B\n締め");
+    expect(html).toContain("<p>導入文</p>");
+    expect(html).toContain("<ul><li>項目A</li><li>項目B</li></ul>");
+    expect(html).toContain("<p>締め</p>");
+  });
+
   it("escapeHtml converts five dangerous characters", () => {
     expect(escapeHtml('<>&\"\''))
       .toBe("&lt;&gt;&amp;&quot;&#39;");

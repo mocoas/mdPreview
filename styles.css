@@ -185,6 +185,26 @@ body {
   color: inherit;
 }
 
+.preview-output table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.8rem 0;
+  border: 2px solid #8f7f6d;
+}
+
+.preview-output th,
+.preview-output td {
+  border: 1px solid #8f7f6d;
+  padding: 0.45rem 0.6rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.preview-output th {
+  background: #efe3cf;
+  font-weight: 700;
+}
+
 @media (max-width: 700px) {
   .app-shell {
     margin: 1.2rem;
