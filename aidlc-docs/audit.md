@@ -197,3 +197,43 @@
 **Context**: User-requested VCS operation
 
 ---
+
+## CONSTRUCTION - GitHub Pages Status Check
+**Timestamp**: 2026-06-04T00:00:31Z
+**User Input**: "お願いします"
+**AI Response**: "Checked GitHub Pages configuration and latest build via GitHub API. Confirmed Pages source is main branch root, site URL is live, and latest build for commit 0fbbf97 is built with no error."
+**Context**: Post-push deployment visibility verification
+
+---
+
+## CONSTRUCTION - UI Investigation (Preview Readability)
+**Timestamp**: 2026-06-04T00:08:37Z
+**User Input**: "なんかbashのプレビューが見づらい（黒背景にライン？）んですが原因を調べてください"
+**AI Response**: "Identified CSS cause: code block uses dark pre background while nested code element also has separate light background/padding, creating line-like visual artifacts in fenced code blocks such as bash."
+**Context**: Root cause analysis for preview readability issue
+
+---
+
+## CONSTRUCTION - UI Fix (Preview Readability)
+**Timestamp**: 2026-06-04T00:22:05Z
+**User Input**: "お願いし明日"
+**AI Response**: "Applied CSS fix to neutralize inline code background/padding inside pre blocks, resolving the dark-background line artifact in fenced code previews."
+**Context**: Post-investigation UI correction
+
+---
+
+## CONSTRUCTION - Local Verification Guidance
+**Timestamp**: 2026-06-04T00:24:25Z
+**User Input**: "ローカルで確認する方法は？"
+**AI Response**: "Provided simple local verification steps using direct browser open and optional local static server with Python or Node to validate behavior."
+**Context**: User requested local run instructions
+
+---
+
+## CONSTRUCTION - Git Commit and Push Request (Readability Fix)
+**Timestamp**: 2026-06-04T00:26:14Z
+**User Input**: "OKです！　コミットしてＰＵＳＨしてください"
+**AI Response**: "Prepared changes, committed readability-related updates, and pushed to origin/main."
+**Context**: User-requested VCS operation after local verification
+
+---

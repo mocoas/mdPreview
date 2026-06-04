@@ -178,6 +178,13 @@ body {
   border-radius: 6px;
 }
 
+.preview-output pre code {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  color: inherit;
+}
+
 @media (max-width: 700px) {
   .app-shell {
     margin: 1.2rem;
